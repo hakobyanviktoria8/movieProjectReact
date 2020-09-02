@@ -1,0 +1,62 @@
+.AppSwiper {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.swiperMainContainer {
+    flex: 1;
+    height: 100%;
+    /*padding-top: 20px;*/
+}
+.swiper-container {
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+}
+.swiper-slide {
+    /*width: 100%;*/
+    /*max-width: 300px;*/
+    width: 23rem;
+    height: 90%;
+    /*height: 400px !important;*/
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+    background-color: #FFF2E7;
+    color: gray;
+    padding: 5px;
+}
+.imgCardHolder{
+    height: 100%;
+}
+.imgCardHolder div{
+    width: 0;
+    height: 0;
+    border-top: 6rem solid #FFF2E7;
+    border-left: 6rem solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.imgCardHolder div p{
+    font-size: 2rem;
+    color: #521437;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -5.5rem;
+    right: 0.6rem;
+}
+.imgCardHolder img {
+    width: 100%;
+    height: 100%;
+}
+
+

@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Movies} from "./MovieProject/Print/Movies";
+import {Header} from "./MovieProject/Header/Header";
+import {NavBar} from "./MovieProject/NavBar/NavBar";
+import PopularMovies from "./MovieProject/PopularMovies/PopularMovies";
+// import FlipCart from "./MovieProject/Print/FlipCart/FlipCart";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={"App"}>
+        <NavBar/>
+        <Header/>
+        <PopularMovies/>
+        <h2>Choose genres</h2>
+        {/*<FlipCart/>*/}
+        <Movies/>
+
     </div>
   );
 }

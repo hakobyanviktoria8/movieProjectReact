@@ -1,0 +1,33 @@
+.NavBar{
+    height: 6rem;
+    width: 100%;
+    padding: 1rem 7rem;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    transition: all 1s;
+    transition-timing-function: ease-in;
+}
+.NavBarBG{
+    background: rgba(13, 1, 8, 0.91);
+}
+.Logo{
+    height: 3.5rem;
+    margin-right: 18rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

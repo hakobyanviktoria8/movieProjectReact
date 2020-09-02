@@ -1,0 +1,25 @@
+.popular{
+    height: 45rem;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+body {
+    height: 50%;
+}
+.img {
+    width: 31vw;
+    height: 33vw;
+}
+.swiper-button-next, .swiper-button-prev{
+    height: 2vw;
+}
+.slideTitle {
+    margin-left: 15%;
+    font-size: 2vw;
+}
+.slideCaption{
+    margin-left: 20%;
+    font-size: 1.5vw;
+}
