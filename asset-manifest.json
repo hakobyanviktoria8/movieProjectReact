@@ -1,23 +1,30 @@
 {
   "files": {
-    "main.css": "/movieProjectReact/static/css/main.66f77dd7.chunk.css",
-    "main.js": "/movieProjectReact/static/js/main.91df662b.chunk.js",
-    "main.js.map": "/movieProjectReact/static/js/main.91df662b.chunk.js.map",
+    "main.css": "/movieProjectReact/static/css/main.d5c1ef81.chunk.css",
+    "main.js": "/movieProjectReact/static/js/main.58ade311.chunk.js",
+    "main.js.map": "/movieProjectReact/static/js/main.58ade311.chunk.js.map",
     "runtime-main.js": "/movieProjectReact/static/js/runtime-main.5efa9e93.js",
     "runtime-main.js.map": "/movieProjectReact/static/js/runtime-main.5efa9e93.js.map",
-    "static/js/2.44fdf448.chunk.js": "/movieProjectReact/static/js/2.44fdf448.chunk.js",
-    "static/js/2.44fdf448.chunk.js.map": "/movieProjectReact/static/js/2.44fdf448.chunk.js.map",
+    "static/css/2.b59621d9.chunk.css": "/movieProjectReact/static/css/2.b59621d9.chunk.css",
+    "static/js/2.007482c4.chunk.js": "/movieProjectReact/static/js/2.007482c4.chunk.js",
+    "static/js/2.007482c4.chunk.js.map": "/movieProjectReact/static/js/2.007482c4.chunk.js.map",
     "index.html": "/movieProjectReact/index.html",
-    "precache-manifest.60e5bb3a394bdb0bfe8e501cc39ccd3e.js": "/movieProjectReact/precache-manifest.60e5bb3a394bdb0bfe8e501cc39ccd3e.js",
+    "precache-manifest.cbe76693f715a85d8a63a20d6b0d7aec.js": "/movieProjectReact/precache-manifest.cbe76693f715a85d8a63a20d6b0d7aec.js",
     "service-worker.js": "/movieProjectReact/service-worker.js",
-    "static/css/main.66f77dd7.chunk.css.map": "/movieProjectReact/static/css/main.66f77dd7.chunk.css.map",
-    "static/js/2.44fdf448.chunk.js.LICENSE.txt": "/movieProjectReact/static/js/2.44fdf448.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/movieProjectReact/static/media/logo.5d5d9eef.svg"
+    "static/css/2.b59621d9.chunk.css.map": "/movieProjectReact/static/css/2.b59621d9.chunk.css.map",
+    "static/css/main.d5c1ef81.chunk.css.map": "/movieProjectReact/static/css/main.d5c1ef81.chunk.css.map",
+    "static/js/2.007482c4.chunk.js.LICENSE.txt": "/movieProjectReact/static/js/2.007482c4.chunk.js.LICENSE.txt",
+    "static/media/Logo.svg": "/movieProjectReact/static/media/Logo.ba104922.svg",
+    "static/media/Star0.svg": "/movieProjectReact/static/media/Star0.08600224.svg",
+    "static/media/Star1.svg": "/movieProjectReact/static/media/Star1.b0edd02e.svg",
+    "static/media/play.svg": "/movieProjectReact/static/media/play.e9268479.svg",
+    "static/media/popularity.svg": "/movieProjectReact/static/media/popularity.07510ebe.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.5efa9e93.js",
-    "static/js/2.44fdf448.chunk.js",
-    "static/css/main.66f77dd7.chunk.css",
-    "static/js/main.91df662b.chunk.js"
+    "static/css/2.b59621d9.chunk.css",
+    "static/js/2.007482c4.chunk.js",
+    "static/css/main.d5c1ef81.chunk.css",
+    "static/js/main.58ade311.chunk.js"
   ]
 }
