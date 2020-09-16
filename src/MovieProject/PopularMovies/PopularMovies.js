@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./PopularMovies.css";
 import SwiperComp from "./SwiperComp/SwiperComp";
 
-export default function PopularMovies(props) {
+export function PopularMovies(props) {
     const url = "https://api.themoviedb.org/3/movie/top_rated?api_key=31769453dd0f9634806aedb81440ed94&language=en-US";
     const [movies, setMovies] = useState([]);
 
@@ -11,7 +11,6 @@ export default function PopularMovies(props) {
             let response = await fetch(url);
             let data = await response.json();
             setMovies(data);
-            console.log(movies)
         };
         fetchData();
     },[]);

@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from "react";
 import "./PrintMovie.css";
+import {Print} from "./Print";
 
 export function PrintMovie({title, url}) {
-    const IMG_URL = "https://image.tmdb.org/t/p/original/";
     const [movies, setMovies] = useState([]);
 
     useEffect(()=>{
@@ -10,10 +10,11 @@ export function PrintMovie({title, url}) {
             let response = await fetch(url);
             let data = await response.json();
             setMovies(data.results);
+            // return data;
         };
         fetchData();
     },[]);
-    console.log(movies);
+    // console.log(movies);
 
     return(
         <div className={"section"}>
@@ -21,12 +22,7 @@ export function PrintMovie({title, url}) {
             <div className={"rowSection"}>
                 {
                     movies.map((movie,idx)=>
-                        <div  className={"rowSection_div"}>
-                            <div className={"VoteAverage"}>
-                                <p>{movie.vote_average} </p>
-                            </div>
-                            <img key={idx} className={"cartImg"} src={IMG_URL + movie.poster_path} alt=""/>
-                        </div>
+                        <Print movie = {movie} url = {url} idx = {idx} key = {idx}/>
                     )
                 }
             </div>

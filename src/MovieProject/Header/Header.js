@@ -36,8 +36,6 @@ export function Header(props) {
                     <img src={require("../img/Star0.svg")} alt=""/>
                 </div>
             </div>
-
-
         </div>
     )
 }

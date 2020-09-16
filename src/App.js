@@ -3,8 +3,8 @@ import './App.css';
 import {Movies} from "./MovieProject/Print/Movies";
 import {Header} from "./MovieProject/Header/Header";
 import {NavBar} from "./MovieProject/NavBar/NavBar";
-import PopularMovies from "./MovieProject/PopularMovies/PopularMovies";
-// import FlipCart from "./MovieProject/Print/FlipCart/FlipCart";
+import {Footer} from "./MovieProject/Footer/Footer";
+import {PopularMovies} from "./MovieProject/PopularMovies/PopularMovies";
 
 function App() {
   return (
@@ -13,9 +13,8 @@ function App() {
         <Header/>
         <PopularMovies/>
         <h2>Choose genres</h2>
-        {/*<FlipCart/>*/}
         <Movies/>
-
+        <Footer/>
     </div>
   );
 }

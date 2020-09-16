@@ -14,7 +14,8 @@ const SwiperComp = ({movies})=>{
         arrImg.push(x.poster_path);
         voteAverage.push(x.vote_average);
     });
-    console.log(voteAverage);
+    // console.log(movies);
+    // console.log(voteAverage);
 
     useEffect(()=>{
         swiper.current = new Swiper('.swiper-container',{
@@ -50,7 +51,7 @@ const SwiperComp = ({movies})=>{
                                     <div>
                                         <p>{voteAverage[x]} </p>
                                     </div>
-                                    <img className={"swiperImg"} src={IMG_URL+arrImg[x]} alt="images"/>
+                                    {arrImg[x] && <img className={"swiperImg"} src={IMG_URL+arrImg[x]} alt="images"/>}
                                 </div>
                             </div>
                         )}

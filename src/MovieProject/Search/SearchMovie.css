@@ -9,7 +9,7 @@
     outline: none;
     background-color: #dedac6;
 }
-.button{
+.buttonSearch{
     width: 15rem;
     height: 3rem;
     font-size: 1rem;
@@ -20,12 +20,42 @@
     border: 3px solid #521437;
     position: relative;
     right: 4.5rem;
+    line-height: initial;
 }
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
 
-
-
-
-
+    /*background: #fffbe7;*/
+    /*width: 90%;*/
+    /*padding: 1.77rem;*/
+    /*position: absolute;*/
+    /*left: 5%;*/
+    /*margin-top: 2rem;*/
+    /*height: 81rem;*/
+    /*display: -webkit-box;*/
+    /*flex-wrap: wrap;*/
+}
+.card-list .flip-card{
+    width: 13rem;
+    height: 20rem;
+    margin: .5rem;
+    perspective: 5000px;
+}
+.modal.show .modal-dialog {
+    transform: none;
+    width: 40rem;
+    margin: 5rem 28rem;
+}
+.modal-content {
+    width: 135% !important;
+    display: flex;
+    justify-content: center;
+}
+.cartImgSearch {
+    width: 30%;
+    margin: 1.6%;
+}
 
 
 
