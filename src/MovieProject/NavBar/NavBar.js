@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from "react";
 import "./NavBar.css";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 import SearchMovies from "../Search/SearchMovie";
+import {Home} from "../Home/Home";
+import {Contact} from "../Contact/Contact";
+// import {SearchData} from "../Search/SearchData";
+
 
 export function NavBar(props) {
     const [show, setShow] = useState(false);
@@ -15,11 +25,22 @@ export function NavBar(props) {
     },[]);
 
     return(
-        <div className={`NavBar ${show && "NavBarBG"}`}>
-            <div>
-                <img className={"Logo"} src={require("../img/Logo.svg")} alt=""/>
-            </div>
-            <SearchMovies/>
-        </div>
+
+            <Router>
+                <div className={`NavBar ${show && "NavBarBG"}`}>
+                    <Link to="/"><img className={"Logo"} src={require("../Home/img/Logo.svg")} alt=""/></Link>
+                    <SearchMovies/>
+                    <Link className={"link"} to="/contact">Contact</Link>
+                    <Link className={"link"} to="/faq">FAQ</Link>
+                </div>
+                <Switch>
+                    <Route path="/" exact>
+                        <Home/>
+                    </Route>
+                    <Route path="/contact"><Contact/> </Route>
+                    <Route path="/faq"> faq</Route>
+                </Switch>
+
+            </Router>
     )
 }

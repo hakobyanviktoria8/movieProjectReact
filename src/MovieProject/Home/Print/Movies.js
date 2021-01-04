@@ -21,6 +21,7 @@ export function Movies(props) {
 
     return(
         <div>
+            <h2>Choose genres</h2>
             {
                 request.map((req,idx)=>
                     <PrintMovie key={idx} title={req.title} url={req.url}/>

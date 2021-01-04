@@ -8,6 +8,10 @@ export default function SearchMovies(props){
     const [movies, setMovies] = useState([]);
     const IMG_URL = "https://image.tmdb.org/t/p/original/";
     const [modal, setModal] = useState(false);
+
+    //togle
+    const [togle,setTogle] = useState(true);
+
     const  searchMovies = async(e) => {
         e.preventDefault();
         const url = `https://api.themoviedb.org/3/search/movie?api_key=31769453dd0f9634806aedb81440ed94&language=en-US&query=${input}&page=1&include_adult=false`;
@@ -29,6 +33,18 @@ export default function SearchMovies(props){
     } = props;
 
     const toggle = () => setModal(!modal);
+    const showMoreMovies = ()=>{
+        console.log(movies.slice(6,20));
+        movies.slice(6,20).map((movie,idx) =>
+            movie.poster_path && <img key={idx} className={"cartImgSearch"} src={IMG_URL + movie.poster_path} alt=""/>
+        )
+    };
+
+    //toggle
+    const handleClick=()=>{
+        setTogle(!togle);
+        togle ? document.querySelector(".dBlock").style.display="block": document.querySelector(".dBlock").style.display="none"
+    };
 
     return (
         <div className={"container1"}>
@@ -44,11 +60,18 @@ export default function SearchMovies(props){
             </form>
 
             <Modal isOpen={modal} toggle={toggle} className={className}>
-                <ModalHeader toggle={toggle}>Search movies!</ModalHeader>
+                <ModalHeader toggle={toggle}>Search movies! Find {movies.length} movies.</ModalHeader>
+
                 <ModalBody className="card-list">
-                    {movies.map((movie,idx) =>
+                    {movies.slice(0,6).map((movie,idx) =>
                         movie.poster_path && <img key={idx} className={"cartImgSearch"} src={IMG_URL + movie.poster_path} alt=""/>
                     )}
+                    <div className={"dBlock"}>
+                        {movies.slice(6,20).map((movie,idx) =>
+                            movie.poster_path && <img key={idx} className={"cartImgSearch"} src={IMG_URL + movie.poster_path} alt=""/>
+                        )}
+                    </div>
+                    <button className={"btnSeeLess"} onClick={handleClick}>{togle? "See more" : "Less"}</button>
                 </ModalBody>
                 <ModalFooter>
                     <Button color="secondary" onClick={toggle}>Cancel</Button>

@@ -25,16 +25,6 @@
 .card-list{
     display: flex;
     flex-wrap: wrap;
-
-    /*background: #fffbe7;*/
-    /*width: 90%;*/
-    /*padding: 1.77rem;*/
-    /*position: absolute;*/
-    /*left: 5%;*/
-    /*margin-top: 2rem;*/
-    /*height: 81rem;*/
-    /*display: -webkit-box;*/
-    /*flex-wrap: wrap;*/
 }
 .card-list .flip-card{
     width: 13rem;
@@ -56,87 +46,20 @@
     width: 30%;
     margin: 1.6%;
 }
-
-
-
-
-
-
-
-
-
-/*p {*/
-    /*font-size: 1.6rem;*/
-/*}*/
-
-/*small {*/
-    /*font-size: 1.2rem;*/
-/*}*/
-
-/*.container {*/
-    /*margin: 0 auto;*/
-    /*max-width:1000px;*/
-    /*padding: 40px;*/
-/*}*/
-
-/*.title {*/
-    /*font-size: 4.4rem;*/
-    /*text-align: center;*/
-    /*color: gray;*/
-/*}*/
-/*.form{*/
-    /*display: grid;*/
-/*}*/
-
-
-/*.card {*/
-    /*padding: 2rem 4rem;*/
-    /*display: inline-block;*/
-    /*width: 300px;*/
-    /*height: 500px;*/
-    /*margin: 3px;*/
-    /*overflow: auto;*/
-    /*border-radius: 10px;*/
-    /*box-shadow: 1px 1px 5px rgba(0,0,0,0.25);*/
-    /*margin-bottom: 2rem;*/
-    /*background-color: white;*/
-/*}*/
-/*.button {*/
-    /*outline: none;*/
-    /*background-color: rgba(0,0,0,0.75);*/
-    /*color: white;*/
-    /*padding: 1rem 2rem;*/
-    /*border: 1px solid rgba(0,0,0,0.75);*/
-    /*border-radius: 20px;*/
-    /*font-size: 1.4rem;*/
-    /*cursor: pointer;*/
-    /*transition: background-color 250ms;*/
-/*}*/
-/*.button:hover {*/
-    /*background-color: rgba(0,0,0,0.85);*/
-/*}*/
-/*@media (min-width:786px){*/
-    /*.form {*/
-        /*grid-template-columns: auto 1fr auto;*/
-        /*grid-gap: 1rem;*/
-        /*align-items: center;*/
-    /*}*/
-    /**/
-    /*.input {*/
-        /*margin-bottom: 0;*/
-    /*}*/
-/*}*/
-/*.card-list{*/
-    /*margin-top: 4rem;*/
-/*}*/
-/*.card {*/
-    /*padding: 2rem 4rem;*/
-    /*border-radius: 10px;*/
-    /*box-shadow: 1px 1px 5px rgba(0,0,0,0.25);*/
-    /*margin-bottom: 2rem;*/
-    /*background-color: white;*/
-/*}*/
-/*.cardImg{*/
-    /*margin: 0 auto;*/
-    /*display: block*/
-/*}*/
+.cartImgSearch:hover{
+    transform: scale(1.02,1.02);
+    box-shadow: 0 0 10px #7f7272;
+}
+.dBlock{
+    display: none;
+}
+.btnSeeLess{
+    margin: 1rem auto;
+    padding: .5rem 4rem;
+    background: #6d747f;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: .2rem;
+}

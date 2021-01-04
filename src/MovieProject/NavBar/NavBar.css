@@ -15,19 +15,15 @@
 }
 .Logo{
     height: 3.5rem;
-    margin-right: 18rem;
+    margin-right: 12rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.link{
+    color: #dedac6;
+    font-size: 1.5rem;
+    margin: 0 3rem;
+}
+.link:hover{
+    color: #dedac6;
+    text-decoration: none;
+}
 

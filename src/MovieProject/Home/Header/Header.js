@@ -10,9 +10,7 @@ export function Header(props) {
         const fetchData  = async() => {
             let response = await fetch(url);
             let data = await response.json();
-            setMovies(data.results[0]);
-            // setMovies(data.results[Math.floor(data.results.length*Math.random())]);
-            // console.log(Math.floor(data.results.length*Math.random()))
+            setMovies(data.results[1]);
         };
         fetchData();
     },[]);
