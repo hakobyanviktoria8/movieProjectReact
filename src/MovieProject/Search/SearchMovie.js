@@ -28,17 +28,10 @@ export default function SearchMovies(props){
 
     //modal
     const {
-        buttonLabel,
         className
     } = props;
 
     const toggle = () => setModal(!modal);
-    const showMoreMovies = ()=>{
-        console.log(movies.slice(6,20));
-        movies.slice(6,20).map((movie,idx) =>
-            movie.poster_path && <img key={idx} className={"cartImgSearch"} src={IMG_URL + movie.poster_path} alt=""/>
-        )
-    };
 
     //toggle
     const handleClick=()=>{
@@ -82,15 +75,3 @@ export default function SearchMovies(props){
     )
 }
 
-
-
-
-//{movies.map(movie => (
-//                     <div className={"card"}>
-//                         <img className={"cardImg"} src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`} alt=""/>
-//                         <h2>{movie.original_title}</h2>
-//                         <small>{movie.overview}</small>
-//                         <p>Release date: {movie.release_date}</p>
-//                         <p>Vote: {movie.vote_average}</p>
-//                     </div>
-//                 ))}

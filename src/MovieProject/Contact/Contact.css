@@ -1,4 +1,46 @@
 .Contact{
     min-height: 50vh;
-    margin-top: 8rem;
+    margin-top: 6rem;
+}
+.form-control{
+    border: 2px solid #521437 !important;
+    margin: 1.5rem;
+    padding: 1.5rem !important;
+}
+.formWraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.formInput{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.formInput div{
+    width: 35%;
+    margin: 0 1.5rem 0 0;
+}
+.formInput textarea{
+    height: 2rem;
+}
+.formBtn{
+    background: #521437;
+    color: #dcdec3;
+    padding: .8rem 6rem;
+    outline: none;
+    border: none;
+    border-radius: .3rem;
+}
+/*follow icon*/
+.followIcon{
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.followIcon a{
+    margin: 1rem;
 }

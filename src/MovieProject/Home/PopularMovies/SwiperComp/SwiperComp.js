@@ -14,8 +14,6 @@ const SwiperComp = ({movies})=>{
         arrImg.push(x.poster_path);
         voteAverage.push(x.vote_average);
     });
-    // console.log(movies);
-    // console.log(voteAverage);
 
     useEffect(()=>{
         swiper.current = new Swiper('.swiper-container',{
@@ -56,7 +54,7 @@ const SwiperComp = ({movies})=>{
                             </div>
                         )}
                     </div>
-                    {/*<div className="swiper-pagination"> </div>*/}
+                    <div className="swiper-pagination"> </div>
                 </div>
             </div>
         </div>
