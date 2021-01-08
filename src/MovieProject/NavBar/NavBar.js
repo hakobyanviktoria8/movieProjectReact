@@ -9,8 +9,7 @@ import {
 import SearchMovies from "../Search/SearchMovie";
 import {Home} from "../Home/Home";
 import {Contact} from "../Contact/Contact";
-// import {SearchData} from "../Search/SearchData";
-
+import {Faq} from "../Faq/Faq";
 
 export function NavBar(props) {
     const [show, setShow] = useState(false);
@@ -38,7 +37,7 @@ export function NavBar(props) {
                         <Home/>
                     </Route>
                     <Route path="/contact"><Contact/> </Route>
-                    <Route path="/faq"> faq</Route>
+                    <Route path="/faq"> <Faq/></Route>
                 </Switch>
 
             </Router>

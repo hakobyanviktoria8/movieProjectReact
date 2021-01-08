@@ -44,3 +44,12 @@
 .followIcon a{
     margin: 1rem;
 }
+/*Per Contact Map*/
+.PerContactMap iframe{
+    border-radius: 1rem;
+}
+.PerContact div{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
