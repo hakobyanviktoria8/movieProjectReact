@@ -9,8 +9,7 @@ export function PrintMovie({title, url}) {
         const fetchData  = async() => {
             let response = await fetch(url);
             let data = await response.json();
-            setMovies(data.results);
-            // return data;
+            setMovies(data.results.sort((a, b) => (a.vote_average > b.vote_average) ? -1 : 1));
         };
         fetchData();
     },[]);

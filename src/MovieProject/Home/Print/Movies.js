@@ -22,9 +22,15 @@ export function Movies(props) {
     return(
         <div>
             <h2>Choose genres</h2>
+            <button value={"Trending"} onClick={(e)=>{
+                console.log(e.target.value);
+                const div = document.getElementById(e.target.value);
+                div.style.backgroundColor="red"
+            }}
+            >Trending</button>
             {
                 request.map((req,idx)=>
-                    <PrintMovie key={idx} title={req.title} url={req.url}/>
+                    <PrintMovie id={req.title.split(" ").join("")} key={idx} title={req.title} url={req.url}/>
                 )
             }
         </div>

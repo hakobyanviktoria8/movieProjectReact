@@ -8,7 +8,6 @@ import {
     AccordionItemPanel,
 } from 'react-accessible-accordion';
 
-// Demo styles, see 'Styles' section below for some notes on use.
 import 'react-accessible-accordion/dist/fancy-example.css';
 
 export  function AccordionFaq(props) {
@@ -58,6 +57,45 @@ export  function AccordionFaq(props) {
                 <AccordionItemPanel>
                     <p>
                         Yes, you can. You can see all the movies included in this API: https://api.themoviedb.org on our site.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        <b>How can I contact you?</b>
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <p>
+                        You can find my contact under the Contact button.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        <b>Can I see the design of this project? </b>
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <p>
+                        Of course, you can. Here it is:
+                        <a href="https://www.figma.com/file/tLmHuLf0srURsV2cGacO8e/Untitled?node-id=61%3A299"> Figma Link</a>
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem>
+                <AccordionItemHeading>
+                    <AccordionItemButton>
+                        <b>What kind of chocolate do you prefer? </b>
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <p>
+                        I like Belgian chocolate. <br/>
+                        I also like Armenian chocolate, especially Grand Candy. <br/>
+                        My decision to participate in the competition was influenced by the availability of chocolate. :)
                     </p>
                 </AccordionItemPanel>
             </AccordionItem>
