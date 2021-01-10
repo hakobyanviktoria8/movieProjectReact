@@ -14,7 +14,6 @@ import {Faq} from "../Faq/Faq";
 export function NavBar(props) {
     const [show, setShow] = useState(false);
 
-
     useEffect(() => {
         window.addEventListener("scroll", () =>{
             window.scrollY > 100 ? setShow(true) : setShow(false)

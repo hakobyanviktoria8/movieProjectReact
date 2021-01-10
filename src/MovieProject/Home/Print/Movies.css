@@ -1,5 +1,21 @@
-
-
+.MoviesBtns{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.Movies button{
+    width: 15rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.hide{
+    display: none;
+}
+.active{
+    background: #521437;
+    color: white;
+}
 
 
 

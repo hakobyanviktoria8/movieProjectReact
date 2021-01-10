@@ -13,7 +13,9 @@ export function Print({movie, url, idx}) {
                     <div className={"VoteAverage"}>
                         <p>{movie.vote_average} </p>
                     </div>
-                    <img  className={"cartImg"} src={IMG_URL + movie.poster_path} alt=""/>
+                    {movie.backdrop_path &&
+                        <img className={"cartImg"} src={IMG_URL + movie.poster_path} alt=""/>
+                    }
                 </div>
                 <div className="flip-card-back">
                     <h4>{(movie.title ? movie.title : movie.name).split(" ").slice(0,4).join(" ")}</h4>

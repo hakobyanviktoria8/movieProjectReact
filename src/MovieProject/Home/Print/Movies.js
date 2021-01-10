@@ -1,8 +1,10 @@
-import React  from "react";
+import React, {useState} from "react";
 import "./Movies.css";
 import {PrintMovie} from "./PrintMovie";
 
 export function Movies(props) {
+    const [show,setShow] = useState(false);
+
     const API_URl = 'https://api.themoviedb.org/3';
     const  API_KEY = '31769453dd0f9634806aedb81440ed94';
 
@@ -19,18 +21,34 @@ export function Movies(props) {
         {title: "Animation", url:`${API_URl}/discover/movie/?api_key=${API_KEY}&with_genres=16&append_to_response=videos`},
     ];
 
+    //div display block or none
+    const toggle =(e)=>{
+        setShow(!show);
+        let val= e.target.value +"";
+        let div= document.getElementById(val);
+        div.classList.toggle("hide");
+    };
+
     return(
-        <div>
+        <div className={"Movies"}>
             <h2>Choose genres</h2>
-            <button value={"Trending"} onClick={(e)=>{
-                console.log(e.target.value);
-                const div = document.getElementById(e.target.value);
-                div.style.backgroundColor="red"
-            }}
-            >Trending</button>
+            <div className={"MoviesBtns"}>
+                {
+                    request.map((req,idx)=>
+                        <button key={idx} value={req.title.split(" ").join("")}
+                                 onClick={(event)=>{
+                                     toggle(event);
+                                     event.target.classList.toggle("active");
+                                 }}
+                        >{req.title}</button>
+                    )
+                }
+            </div>
             {
                 request.map((req,idx)=>
-                    <PrintMovie id={req.title.split(" ").join("")} key={idx} title={req.title} url={req.url}/>
+                    <div key={idx} id={req.title.split(" ").join("")} className={"hide"}>
+                        <PrintMovie title={req.title} url={req.url}/>
+                    </div>
                 )
             }
         </div>
