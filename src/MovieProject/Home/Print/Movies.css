@@ -8,13 +8,18 @@
     padding: 1rem;
     font-size: 1.5rem;
     margin: .5rem;
+    border: double #521437;
+    color: #521437;
+    background: white;
+    font-weight: bold;
+    outline: none;
 }
 .hide{
     display: none;
 }
-.active{
+.MoviesBtns .active{
     background: #521437;
-    color: white;
+    color: #FFF2E7;
 }
 
 

@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from "react";
 import "./PrintMovie.css";
+import axios from "axios";
 import {Print} from "./Print";
 
 export function PrintMovie({title, url}) {
@@ -7,12 +8,12 @@ export function PrintMovie({title, url}) {
 
     useEffect(()=>{
         const fetchData  = async() => {
-            let response = await fetch(url);
-            let data = await response.json();
-            setMovies(data.results.sort((a, b) => (a.vote_average > b.vote_average) ? -1 : 1));
+            let req = await axios.get(url);
+            setMovies(req.data.results.sort((a, b) => (a.vote_average > b.vote_average) ? -1 : 1));
+            return req;
         };
         fetchData();
-    },[]);
+    },[url]);
     // console.log(movies);
 
     return(
@@ -21,7 +22,7 @@ export function PrintMovie({title, url}) {
             <div className={"rowSection"}>
                 {
                     movies.map((movie,idx)=>
-                        <Print movie = {movie} url = {url} idx = {idx} key = {idx}/>
+                        <Print movie = {movie} key = {idx}/>
                     )
                 }
             </div>

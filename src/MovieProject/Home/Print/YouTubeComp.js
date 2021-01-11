@@ -3,7 +3,6 @@ import YouTube from 'react-youtube';
 
 class YouTubeComp extends React.Component {
     _onReady(event) {
-        // access to player in all event handlers via event.target
         event.target.pauseVideo();
     }
     render() {
@@ -22,3 +21,5 @@ class YouTubeComp extends React.Component {
 
 }
 export default YouTubeComp
+
+//https://www.npmjs.com/package/react-youtube

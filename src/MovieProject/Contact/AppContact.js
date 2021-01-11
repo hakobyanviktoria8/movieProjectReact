@@ -8,6 +8,7 @@ export function AppContact(){
 
     const handleSubmit=(e)=>{
         e.preventDefault();
+        alert("Message send");
         console.log(name);
         console.log(email);
         console.log(message);

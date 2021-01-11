@@ -5,7 +5,6 @@ import movieTrailer from "movie-trailer";
 
 const ModalTrlerComp = (props) => {
     const {
-        buttonLabel,
         className
     } = props;
 
@@ -20,20 +19,25 @@ const ModalTrlerComp = (props) => {
         if (trailerUrl) {
             setTrailerUrl("");
         } else {
+            //movieTrailer give name return url
+            //https://www.npmjs.com/package/movie-trailer
             movieTrailer(movie.title ? movie.title : movie.name)
                 .then(url => {
-                    // console.log(url);
+                    //last unique word or v="value"
                     const urlParams = new URLSearchParams(new URL(url).search);
                     setTrailerUrl(urlParams.get("v"));
-                    // console.log(urlParams.get("v"))
                 })
                 .catch((error)=>console.log(error))
         }
     };
-// console.log(props.movie);
+    // console.log(props.movie);
+
     return (
         <div>
-            <Button style={{backgroundColor: "#550037"}} onClick={()=>handleClick(props.movie)}><img src={require("../img/play.svg")} alt=""/> Movie trailer</Button>
+            <button style={{backgroundColor: "#550037", margin: 0}} onClick={()=>handleClick(props.movie)}>
+                <img src={require("../img/play.svg")} alt=""/>
+                Movie trailer
+            </button>
             <Modal isOpen={modal} toggle={toggle} className={className}>
                 <ModalHeader toggle={toggle}>{props.movie.title ? props.movie.title : props.movie.name}</ModalHeader>
                 <ModalBody>
@@ -47,6 +51,6 @@ const ModalTrlerComp = (props) => {
             </Modal>
         </div>
     );
-}
+};
 
 export default ModalTrlerComp;

@@ -1,13 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 import "./PrintMovie.css";
 
 import ModalTrlerComp from "./ModalTrilerComp";
 
-export function Print({movie, url, idx}) {
+export function Print({movie}) {
     const IMG_URL = "https://image.tmdb.org/t/p/original/";
 
     return(
-        <div  key={idx} className="flip-card">
+        <div className="flip-card">
             <div className="flip-card-inner">
                 <div className="flip-card-front">
                     <div className={"VoteAverage"}>
@@ -21,7 +21,6 @@ export function Print({movie, url, idx}) {
                     <h4>{(movie.title ? movie.title : movie.name).split(" ").slice(0,4).join(" ")}</h4>
                     <small>{movie.overview.length > 140 ?
                         movie.overview.slice(0,140).concat("..."): movie.overview}
-                        {/*movie.overview.split(" ").slice(0,20).join(" ").concat("...")*/}
                     </small>
                     <div className="flip-card-back-data">
                         <div className="flip-card-back-left">
