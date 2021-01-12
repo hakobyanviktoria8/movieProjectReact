@@ -1,6 +1,6 @@
 .section{
     width: 100%;
-    height: 30rem;
+    /*height: 30rem;*/
     /*border: 1px solid red;*/
     /*margin-bottom: 10px;*/
 }
@@ -19,8 +19,8 @@
 
 /*flip Card */
 .flip-card {
-    width: 13rem;
-    margin-right: 1rem;
+    /*width: 13rem;*/
+    /*margin-right: 1rem;*/
     perspective: 5000px;
 }
 .flip-card-inner {
@@ -52,13 +52,13 @@
     padding: 1rem;
     color: #521437;
 }
-.flip-card-back small{
-    font-size: .8rem;
-    line-height: 1px;
-}
+/*.flip-card-back small{*/
+    /*font-size: .8rem;*/
+    /*line-height: 1px;*/
+/*}*/
 .flip-card-back h4{
     text-align: center;
-    font-size: 1.15rem;
+    /*font-size: 1.15rem;*/
 }
 .flip-card-back p{
     font-size: 1rem;
@@ -87,15 +87,17 @@
     margin-right: .4rem;
 }
 .flip-card-back-data{
+    /*width: 90%;*/
+    justify-content: space-between;
     display: flex;
-    margin: .5rem 0;
+    /*margin: .5rem 0;*/
     position: absolute;
     bottom: 3.5rem;
 }
 .flip-card-back-right{
     display: flex;
     flex-direction: column;
-    padding-left: 3rem;
+    /*padding-left: 3rem;*/
 }
 .flip-card-back-right img{
     width: 2rem;

@@ -2,6 +2,19 @@
     :root {
         font-size: .9vw;
     }
+    /*nav*/
+    .Logo{
+        height: 3.5rem;
+        margin-right: 12rem;
+    }
+    .NavBar {
+        height: 6rem;
+        padding: 1rem 7rem;
+    }
+    .link {
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
     /*home*/
     .modal-content {
         width: 50rem !important;
@@ -11,6 +24,42 @@
     }
     .HeaderText{
         top: 30rem;
+    }
+    .headerTitle {
+        font-size: 4.5rem;
+    }
+    .headerParagraph {
+        width: 32rem;
+        font-size: 1rem;
+    }
+    .Movies button {
+        width: 15rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin: .5rem;
+    }
+    /*popular*/
+    .popular {
+        height: 45rem;
+    }
+    /*choose ganres*/
+    .section {
+        height: 30rem;
+    }
+    .flip-card {
+        width: 13rem;
+        margin-right: 1rem;
+    }
+    .flip-card-back h4 {
+        font-size: 1.15rem;
+    }
+    .flip-card-back small{
+        font-size: .8rem;
+        line-height: 1px;
+    }
+    .flip-card-back-data {
+        width: 85%;
+        margin: .5rem 0;
     }
     /*search*/
     .buttonSearch {
@@ -31,6 +80,16 @@
     }
     .PerContact img{
         width: 3rem;
+    }
+    .formInput textarea,textarea.form-control{
+        height: 8rem !important;
+    }
+    /*faq*/
+    .accordion b {
+        font-size: 2rem;
+    }
+    .accordion p {
+        font-size: 1.8rem;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -62,7 +121,23 @@
 }
 @media screen and (max-width: 426px) {
     :root {
-        font-size: 1.2vw;
+        font-size: 1.5vw;
+    }
+    /*navBar*/
+    .NavBar {
+        height: 10rem;
+        padding: 1rem 4rem;
+    }
+    .Logo {
+        height: 4.5rem;
+        margin-right: 5rem;
+    }
+    .link {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .linkContact{
+        margin-left: 2rem;
     }
     /*home*/
     .headerTitle {
@@ -71,22 +146,64 @@
     h2{
         font-size: 6rem !important;
     }
-    .headerbgimg{
-        height: 70vh;
+    .headerbgimg {
+        width: 100%;
+        object-fit: cover;
+        height: 100vh;
     }
     .HeaderText{
-        top: 65rem;
+        top: 73rem;
+    }
+    .headerTitle {
+        font-size: 5.5rem;
+    }
+    .headerParagraph {
+        width: 40rem;
+        font-size: 1.5rem;
+    }
+    .HeaderTextRight {
+        margin-top: 10rem;
+    }
+    .HeaderTextRight h4{
         font-size: 2rem;
     }
+    .Movies button {
+        width: 20rem;
+        padding: 2rem;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    /*choose genres*/
+    .section {
+        height: 40rem;
+    }
+    .flip-card {
+        width: 18rem;
+        margin-right: 2rem;
+    }
+    .flip-card-back h4 {
+        font-size: 2rem;
+    }
+    .flip-card-back small {
+        font-size: 1.3rem;
+         line-height: normal;
+    }
+    .flip-card-back-data {
+        width: 90%;
+        margin: 1rem 0;
+    }
+    /*popular*/
     .swiper-pagination {
         display: none;
     }
+    .popular {
+        height: 55rem;
+    }
+
     .modal-content {
-        left: -20%;
+        left: -40%;
     }
-    .linkContact{
-        margin-left: 2rem;
-    }
+
     /*search*/
     form .input {
         width: 28rem;
@@ -105,6 +222,17 @@
     }
     .buttonSearchIMG img{
         width: 1rem;
+    }
+    /*contact*/
+    .formInput textarea, textarea.form-control{
+        height: 9rem !important;
+    }
+    /*faq*/
+    .accordion b {
+        font-size: 2.5rem;
+    }
+    .accordion p {
+        font-size: 2rem;
     }
 }
 @media screen and (max-width: 376px) {

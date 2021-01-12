@@ -1,5 +1,5 @@
 .Contact{
-    min-height: 50vh;
+    min-height: 85vh;
     margin-top: 6rem;
 }
 .form-control{
@@ -24,7 +24,7 @@
     margin: 0 1.5rem 0 0;
 }
 .formInput textarea{
-    height: 2rem;
+    /*height: 2rem;*/
 }
 .formBtn{
     background: #521437;

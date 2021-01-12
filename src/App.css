@@ -1,6 +1,6 @@
-:root {
-  font-size: .9vw;
-}
+/*:root {*/
+  /*font-size: .9vw;*/
+/*}*/
 .App{
   display: flex;
   flex-direction: column;
@@ -26,10 +26,3 @@ h3{
   color: #521437;
   margin: 0 1.5rem !important;
 }
-
-
-
-
-
-
-
