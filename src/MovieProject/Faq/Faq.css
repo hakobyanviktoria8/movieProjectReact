@@ -3,3 +3,11 @@
     width: 80%;
     min-height: 100%;
 }
+.accordion b{
+    color: #521437;
+    font-size: 1.5rem;
+}
+.accordion p{
+    color: #521437;
+    font-size: 1.2rem;
+}

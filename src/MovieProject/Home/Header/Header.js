@@ -33,18 +33,19 @@ export function Header(props) {
         :
         <div className={"Header"}>
             {movies.backdrop_path && <img className={"headerbgimg"} src={IMG_URL + movies.backdrop_path} alt=""/>}
-
-            <div className={"HeaderTextLeft"}>
-                <h1 className={"headerTitle"}>{movies.title?.length > 30 ?  movies.title.substr(0,30) +"..." : movies.title}</h1>
-                <p className={"headerParagraph"}>{movies.overview?.length > 170 ?  movies.overview.substr(0,170) +"..." : movies.overview}</p>
-            </div>
-            <div className={"HeaderTextRight"}>
-                <p className={"headerLanguage"}>{movies.original_language ==="en" ? "English" : "Russian"}</p>
-                <h4 className={"headerDate"}>{movies.release_date}</h4>
-                <div className={"HeaderVote"}>
-                    {stars.map(i =>
-                        <img key = {i} src={require("../img/Star1.svg")} alt=""/>
-                    )}
+            <div className={"HeaderText"}>
+                <div className={"HeaderTextLeft"}>
+                    <h1 className={"headerTitle"}>{movies.title?.length > 30 ?  movies.title.substr(0,30) +"..." : movies.title}</h1>
+                    <p className={"headerParagraph"}>{movies.overview?.length > 170 ?  movies.overview.substr(0,170) +"..." : movies.overview}</p>
+                </div>
+                <div className={"HeaderTextRight"}>
+                    <h4 className={"headerLanguage"}>{movies.original_language ==="en" ? "English" : "Russian"}</h4>
+                    <h4 className={"headerDate"}>{movies.release_date}</h4>
+                    <div className={"HeaderVote"}>
+                        {stars.map(i =>
+                            <img key = {i} src={require("../img/Star1.svg")} alt=""/>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>

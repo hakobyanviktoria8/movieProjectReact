@@ -7,6 +7,7 @@ export function Faq(props) {
         <div className={"Faq"}>
             <h2>Frequently asked questions</h2>
             <br/>
+
             <AccordionFaq/>
         </div>
     )

@@ -26,6 +26,7 @@ export function PrintMovie({title, url}) {
                     )
                 }
             </div>
+            <hr/>
         </div>
     )
 }

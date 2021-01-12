@@ -2,18 +2,8 @@ import React from "react";
 import "./Contact.css";
 import AppContact from "./AppContact";
 import {PerContactMap} from "./PerContactMap";
-// import { useRouteMatch } from 'react-router-dom';
 
 export function Contact(props) {
-    // let route  = useRouteMatch();
-    //
-    // route.path === "/contact" || route.path === "/faq" ?
-    //     document.querySelector('.NavBar').style.background="#52143780"
-    // :
-    //     document.querySelector('.NavBar').style.background="#52143700";
-
-    //document.querySelectorAll('.link').forEach(x=>x.style.color="#52143780")
-
     return(
         <div className={"Contact"}>
             <h2>Contact me</h2>

@@ -28,7 +28,7 @@ export function NavBar(props) {
             <div className={`NavBar ${show && "NavBarBG"}`}>
                 <Link to="/"><img className={"Logo"} src={require("../Home/img/Logo.svg")} alt=""/></Link>
                 <SearchMovies/>
-                <Link className={"link"} to="/contact"><b>Contact</b></Link>
+                <Link className={"link linkContact"} to="/contact"><b>Contact</b></Link>
                 <Link className={"link"} to="/faq"><b>FAQ</b></Link>
             </div>
             <Switch>

@@ -36,7 +36,7 @@ export default function SearchMovies(props){
     //toggle
     const handleClick=()=>{
         setTogle(!togle);
-        togle ? document.querySelector(".dBlock").style.display="block": document.querySelector(".dBlock").style.display="none"
+        document.querySelector(".dBlock").style.display=togle ? "block" : "none"
     };
 
     return (
@@ -49,7 +49,12 @@ export default function SearchMovies(props){
                        type="text"
                        placeholder="Movies name"
                 />
-                <button disabled={!input} className="buttonSearch" onClick={toggle} type="submit">Search</button>
+                <button disabled={!input} className="buttonSearch" onClick={toggle} type="submit">
+                    <span>Search</span>
+                </button>
+                <button disabled={!input} className="buttonSearchIMG" onClick={toggle} type="submit">
+                    <img src={require("./img/search.png")} alt=""/>
+                </button>
             </form>
 
             <Modal isOpen={modal} toggle={toggle} className={className}>

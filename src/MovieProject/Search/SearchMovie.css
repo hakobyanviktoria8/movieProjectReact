@@ -5,12 +5,12 @@
     border-radius: 2rem;
     padding-left: 2rem;
     color: #521437;
-    border: none;
+    border: 2px solid #521437;
     outline: none;
-    background-color: #dedac6;
+    background-color: #fbf8eb;
 }
 .buttonSearch{
-    width: 15rem;
+    /*width: 15rem;*/
     height: 3rem;
     font-size: 1rem;
     border-radius: 2rem;
@@ -21,6 +21,9 @@
     position: relative;
     right: 4.5rem;
     line-height: initial;
+}
+.form{
+    position: relative;
 }
 .card-list{
     display: flex;
@@ -38,7 +41,7 @@
     margin: 5rem 28rem;
 }
 .modal-content {
-    width: 135% !important;
+    /*width: 135% !important;*/
     display: flex;
     justify-content: center;
 }
