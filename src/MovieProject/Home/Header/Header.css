@@ -4,15 +4,11 @@
 }
 .headerbgimg{
     width: 100%;
-    /*object-fit: contain;*/
-    /*height: 50rem;*/
-    /*height: 100vh;*/
     filter: drop-shadow(0px 5px 10px #521437);
 }
 .HeaderText{
     align-items: center;
     position: absolute;
-    /*top: 50rem;*/
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -22,19 +18,7 @@
 .HeaderTextLeft{
     width: 35rem;
     height: 20rem;
-    /*z-index: 2;*/
-    /*margin-left: 7rem;*/
-    /*top: 32rem;*/
-    /*color: #e0d7c9;*/
-
-}
-.HeaderTextRight{
-    /*position: absolute;*/
-    /*z-index: 2;*/
-    /*right: 7rem;*/
-    /*top: 42rem;*/
-
-}
+ }
 .HeaderTextRight h4, .headerDate{
     text-align: right;
     margin-bottom: .5rem;
@@ -42,13 +26,8 @@
 .headerDate{
     font-size: 1.2rem;
 }
-/*.headerTitle{*/
-    /*font-size: 4.5rem;*/
-/*}*/
 .headerParagraph{
     margin-top: 1rem;
-    /*width: 32rem;*/
-    /*font-size: 1rem;*/
 }
 .HeaderVote img{
     width: 2rem;
@@ -67,10 +46,3 @@
 .loading img{
     width: 15rem;
 }
-
-
-
-
-
-
-

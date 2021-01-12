@@ -10,7 +10,6 @@
     background-color: #fbf8eb;
 }
 .buttonSearch{
-    /*width: 15rem;*/
     height: 3rem;
     font-size: 1rem;
     border-radius: 2rem;
@@ -41,7 +40,6 @@
     margin: 5rem 28rem;
 }
 .modal-content {
-    /*width: 135% !important;*/
     display: flex;
     justify-content: center;
 }

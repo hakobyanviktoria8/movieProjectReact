@@ -4,10 +4,6 @@
     text-align: center;
 }
 .Movies button{
-    /*width: 15rem;*/
-    /*padding: 1rem;*/
-    /*font-size: 1.5rem;*/
-    /*margin: .5rem;*/
     border: double #521437;
     color: #521437;
     background: white;
@@ -21,15 +17,3 @@
     background: #521437;
     color: #FFF2E7;
 }
-
-
-
-
-
-
-
-
-
-
-
-

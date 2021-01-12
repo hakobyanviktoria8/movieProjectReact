@@ -240,9 +240,6 @@
         font-size: 1.5vw;
     }
     /*home*/
-    .headerbgimg{
-        height: 60vh;
-    }
     .HeaderText{
         top: 45rem;
         font-size: 2rem;
@@ -260,10 +257,13 @@
 }
 @media screen and (max-width: 376px) {
     /*home*/
-    .headerbgimg{
-        height: 55vh;
-    }
     .HeaderText{
-        top: 50rem;
+        top: 80rem;
+    }
+}
+@media screen and (max-width: 321px) {
+    /*home*/
+    .HeaderText{
+        top: 100rem;
     }
 }
