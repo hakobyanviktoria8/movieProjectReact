@@ -16,7 +16,7 @@ export function NavBar(props) {
 
     useEffect(() => {
         window.addEventListener("scroll", () =>{
-            window.scrollY > 100 ? setShow(true) : setShow(false)
+            window.scrollY > 60 ? setShow(true) : setShow(false)
         });
         return () => {
             window.removeEventListener("scroll")
