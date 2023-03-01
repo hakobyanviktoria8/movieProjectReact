@@ -2,7 +2,7 @@
   "name": "movie-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hakobyanviktoria8.github.io/movieProjectReact/.",
+  "homepage": "https://github.com/hakobyanviktoria8/movieProjectReact/.",
   "dependencies": {
     "-": "0.0.1",
     "@material-ui/core": "^4.11.0",
