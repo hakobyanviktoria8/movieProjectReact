@@ -1,148 +1,115 @@
-.section{
-    width: 100%;
-    /*height: 30rem;*/
-    /*border: 1px solid red;*/
-    /*margin-bottom: 10px;*/
+.section {
+  width: 100%;
 }
-.rowSection{
-    /*display: flex;*/
-    display: -webkit-box;
-    width: 100%;
-    height: 77%;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    padding: 1.2rem;
+.rowSection {
+  display: -webkit-box;
+  width: 100%;
+  height: 77%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 1.2rem;
 }
-.rowSection::-webkit-scrollbar{
-    display: none;
-}
+/* .rowSection::-webkit-scrollbar {
+  display: none;
+} */
 
 /*flip Card */
 .flip-card {
-    /*width: 13rem;*/
-    /*margin-right: 1rem;*/
-    perspective: 5000px;
+  perspective: 5000px;
 }
 .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-.flip-card-front{
-    /*width: 13rem;*/
-    /*margin-right: 1rem;*/
-    /*position: relative;*/
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
 .flip-card-back {
-    transform: rotateY(180deg);
-    background: #FFF2E7;
-    padding: 1rem;
-    color: #521437;
+  transform: rotateY(180deg);
+  background: #fff2e7;
+  padding: 1rem;
+  color: #56595c;
 }
-/*.flip-card-back small{*/
-    /*font-size: .8rem;*/
-    /*line-height: 1px;*/
-/*}*/
-.flip-card-back h4{
-    text-align: center;
-    /*font-size: 1.15rem;*/
+.flip-card-back h4 {
+  text-align: center;
 }
-.flip-card-back p{
-    font-size: 1rem;
-    margin: 0;
+.flip-card-back p {
+  font-size: 1rem;
+  margin: 0;
 }
-.flip-card-back b{
-    font-size: 1.1rem;
+.flip-card-back b {
+  font-size: 1.1rem;
 }
-.flip-card-back button{
-    width: 85%;
-    background: #521437;
-    color: #FFF2E7;
-    padding: .5rem;
-    border: none;
-    outline: none;
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    justify-content: center;
+.flip-card-back button {
+  width: 85%;
+  background: #56595c;
+  color: #fff2e7;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  justify-content: center;
 }
-.flip-card-back button img{
-    width: 1.3rem;
-    margin-right: .4rem;
+.flip-card-back button img {
+  width: 1.3rem;
+  margin-right: 0.4rem;
 }
-.flip-card-back-data{
-    /*width: 90%;*/
-    justify-content: space-between;
-    display: flex;
-    /*margin: .5rem 0;*/
-    position: absolute;
-    bottom: 3.5rem;
+.flip-card-back-data {
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  bottom: 3.5rem;
 }
-.flip-card-back-right{
-    display: flex;
-    flex-direction: column;
-    /*padding-left: 3rem;*/
+.flip-card-back-right {
+  display: flex;
+  flex-direction: column;
 }
-.flip-card-back-right img{
-    width: 2rem;
-    margin-bottom: .3rem;
+.flip-card-back-right img {
+  width: 2rem;
+  margin-bottom: 0.3rem;
 }
-.flip-card-back-right small{
-    font-size: .6rem;
+.flip-card-back-right small {
+  font-size: 0.6rem;
 }
-.cartImg{
-    width: 100%;
-    height: 100%;
-    /*object-fit: contain;*/
-    /*max-height: 20rem;*/
-    /*margin: 1rem;*/
-    transition: transform 500ms;
+.cartImg {
+  width: 100%;
+  height: 100%;
+  transition: transform 500ms;
 }
-.cartImg:hover{
-    /*transform: scale(1.03);*/
-    box-shadow: 0 0 5px #a1a1a1;
+.cartImg:hover {
+  box-shadow: 0 0 5px #a1a1a1;
 }
-.VoteAverage{
-    width: 0;
-    height: 0;
-    border-top: 4rem solid #FFF2E7;
-    border-left: 4rem solid transparent;
-    position: absolute;
-    top: 0;
-    right: 0;
+.VoteAverage {
+  width: 0;
+  height: 0;
+  border-top: 4rem solid #fff2e7;
+  border-left: 4rem solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.VoteAverage p{
-    font-size: 1.3rem;
-    color: #521437;
-    transform: rotate(45deg);
-    position: absolute;
-    top: -3.5rem;
-    right: 0.5rem;
+.VoteAverage p {
+  font-size: 1.3rem;
+  color: #56595c;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -3.5rem;
+  right: 0.5rem;
 }
-/*.button:hover{*/
-    /*transition: all 0.2s;*/
-/*}*/
-
-
-
-
-
-
-
-

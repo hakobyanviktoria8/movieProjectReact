@@ -1,27 +1,24 @@
-.NavBar{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    transition: all 1s;
-    transition-timing-function: ease-in;
+.NavBar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  transition: all 1s;
+  transition-timing-function: ease-in;
+  background: rgba(28, 28, 28, 0.4);
 }
-.NavBarBG{
-    background: rgba(13, 1, 8, 0.91);
+.NavBarBG {
+  background: rgba(28, 28, 28, 0.96);
 }
-.link{
-    color: #dedac6;
-    /*font-size: 1.5rem;*/
-    width: 10rem;
-    /*padding: .5rem;*/
-    text-align: center;
-    /*margin: 0 3rem;*/
+.link {
+  color: #dedac6;
+  width: 10rem;
+  text-align: center;
 }
-.link:hover{
-    color: #dedac6;
-    background: #521437;
-    text-decoration: none;
+.link:hover {
+  color: #dedac6;
+  background: #56595c;
+  text-decoration: none;
 }
-

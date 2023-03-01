@@ -1,19 +1,19 @@
-.MoviesBtns{
-    width: 90%;
-    margin: 0 auto 3rem;
-    text-align: center;
+.MoviesBtns {
+  width: 90%;
+  margin: 0 auto 3rem;
+  text-align: center;
 }
-.Movies button{
-    border: double #521437;
-    color: #521437;
-    background: white;
-    font-weight: bold;
-    outline: none;
+.Movies button {
+  border: double #56595c;
+  color: #56595c;
+  background: white;
+  font-weight: bold;
+  outline: none;
 }
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
-.MoviesBtns .active{
-    background: #521437;
-    color: #FFF2E7;
+.MoviesBtns .active {
+  background: #56595c;
+  color: #fff2e7;
 }

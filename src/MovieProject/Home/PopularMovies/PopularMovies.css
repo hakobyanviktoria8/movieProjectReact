@@ -1,24 +1,25 @@
-.popular{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin-top: 2rem;
+.popular {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
 }
 body {
-    height: 50%;
+  height: 50%;
 }
 .img {
-    width: 31vw;
-    height: 33vw;
+  width: 31vw;
+  height: 33vw;
 }
-.swiper-button-next, .swiper-button-prev{
-    height: 2vw;
+.swiper-button-next,
+.swiper-button-prev {
+  height: 2vw;
 }
 .slideTitle {
-    margin-left: 15%;
-    font-size: 2vw;
+  margin-left: 15%;
+  font-size: 2vw;
 }
-.slideCaption{
-    margin-left: 20%;
-    font-size: 1.5vw;
+.slideCaption {
+  margin-left: 20%;
+  font-size: 1.5vw;
 }

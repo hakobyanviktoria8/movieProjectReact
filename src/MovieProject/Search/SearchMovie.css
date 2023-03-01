@@ -1,66 +1,66 @@
 .input {
-    width: 40rem;
-    height: 3rem;
-    font-size: 1rem;
-    border-radius: 2rem;
-    padding-left: 2rem;
-    color: #521437;
-    border: 2px solid #521437;
-    outline: none;
-    background-color: #fbf8eb;
+  width: 40rem;
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  padding-left: 2rem;
+  color: #56595c;
+  border: 2px solid #56595c;
+  outline: none;
+  background-color: #fbf8eb;
 }
-.buttonSearch{
-    height: 3rem;
-    font-size: 1rem;
-    border-radius: 2rem;
-    background: #521437;
-    color: #dedac6;
-    outline: none;
-    border: 3px solid #521437;
-    position: relative;
-    right: 4.5rem;
-    line-height: initial;
+.buttonSearch {
+  height: 3rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  background: #56595c;
+  color: #dedac6;
+  outline: none;
+  border: 3px solid #56595c;
+  position: relative;
+  right: 4.5rem;
+  line-height: initial;
 }
-.form{
-    position: relative;
+.form {
+  position: relative;
 }
-.card-list{
-    display: flex;
-    flex-wrap: wrap;
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
 }
-.card-list .flip-card{
-    width: 13rem;
-    height: 20rem;
-    margin: .5rem;
-    perspective: 5000px;
+.card-list .flip-card {
+  width: 13rem;
+  height: 20rem;
+  margin: 0.5rem;
+  perspective: 5000px;
 }
 .modal.show .modal-dialog {
-    transform: none;
-    width: 40rem;
-    margin: 5rem 28rem;
+  transform: none;
+  width: 40rem;
+  margin: 5rem 28rem;
 }
 .modal-content {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .cartImgSearch {
-    width: 30%;
-    margin: 1.6%;
+  width: 30%;
+  margin: 1.6%;
 }
-.cartImgSearch:hover{
-    transform: scale(1.02,1.02);
-    box-shadow: 0 0 10px #7f7272;
+.cartImgSearch:hover {
+  transform: scale(1.02, 1.02);
+  box-shadow: 0 0 10px #7f7272;
 }
-.dBlock{
-    display: none;
+.dBlock {
+  display: none;
 }
-.btnSeeLess{
-    margin: 1rem auto;
-    padding: .5rem 4rem;
-    background: #6d747f;
-    border: none;
-    color: white;
-    outline: none;
-    font-size: 1.3rem;
-    border-radius: .2rem;
+.btnSeeLess {
+  margin: 1rem auto;
+  padding: 0.5rem 4rem;
+  background: #6d747f;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 1.3rem;
+  border-radius: 0.2rem;
 }

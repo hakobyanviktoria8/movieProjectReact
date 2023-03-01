@@ -1,63 +1,63 @@
 .AppSwiper {
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 .swiperMainContainer {
-    flex: 1;
-    height: 100%;
+  flex: 1;
+  height: 100%;
 }
 .swiper-container {
-    width: 100vw;
-    height: 100%;
-    overflow: hidden;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
 }
 .swiper-slide {
-    width: 23rem;
-    height: 90%;
-    text-align: center;
-    box-shadow: -1px 15px 30px -12px black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 25px;
-    font-weight: bold;
-    align-items: center;
-    background-color: #FFF2E7;
-    color: gray;
-    padding: 5px;
+  width: 23rem;
+  height: 90%;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 25px;
+  font-weight: bold;
+  align-items: center;
+  background-color: #fff2e7;
+  color: gray;
+  padding: 5px;
 }
-.imgCardHolder{
-    height: 100%;
+.imgCardHolder {
+  height: 100%;
 }
-.imgCardHolder div{
-    width: 0;
-    height: 0;
-    border-top: 6rem solid #FFF2E7;
-    border-left: 6rem solid transparent;
-    position: absolute;
-    top: 0;
-    right: 0;
+.imgCardHolder div {
+  width: 0;
+  height: 0;
+  border-top: 6rem solid #fff2e7;
+  border-left: 6rem solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-.imgCardHolder div p{
-    font-size: 2rem;
-    color: #521437;
-    transform: rotate(45deg);
-    position: absolute;
-    top: -5.5rem;
-    right: 0.6rem;
+.imgCardHolder div p {
+  font-size: 2rem;
+  color: #56595c;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -5.5rem;
+  right: 0.6rem;
 }
 .imgCardHolder img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-.swiper-pagination-bullet{
-    width: .7rem;
-    height: .7rem;
+.swiper-pagination-bullet {
+  width: 0.7rem;
+  height: 0.7rem;
 }
-.swiper-pagination-bullet-active{
-    background: #521437;
+.swiper-pagination-bullet-active {
+  background: #56595c;
 }

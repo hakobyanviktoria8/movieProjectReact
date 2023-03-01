@@ -1,25 +1,28 @@
-.App{
-  display: flex;
-  flex-direction: column;
-}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
 body {
-  background-color: rgb(244,244,244);
+  background-color: rgb(244, 244, 244);
   color: #313331;
 }
-h2{
+
+h2 {
   font-size: 4rem !important;
-  color: #521437;
+  color: #56595c;
   text-align: center;
   margin: 2.5rem !important;
 }
-h3{
+
+h3 {
   font-size: 3rem !important;
-  color: #521437;
+  color: #56595c;
   margin: 0 1.5rem !important;
 }

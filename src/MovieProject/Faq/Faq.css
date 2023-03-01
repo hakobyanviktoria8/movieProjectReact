@@ -1,12 +1,12 @@
-.Faq{
-    margin: 6rem auto;
-    width: 80%;
-    min-height: 85vh;
+.Faq {
+  margin: 6rem auto;
+  width: 80%;
+  min-height: 85vh;
 }
-.accordion b{
-    color: #521437;
+.accordion b {
+  color: #56595c;
 }
-.accordion p{
-    font-size: 1.8rem;
-    color: #521437;
+.accordion p {
+  font-size: 1.8rem;
+  color: #56595c;
 }

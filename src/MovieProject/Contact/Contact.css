@@ -1,55 +1,55 @@
-.Contact{
-    min-height: 85vh;
-    margin-top: 6rem;
+.Contact {
+  min-height: 85vh;
+  margin-top: 6rem;
 }
-.form-control{
-    border: 2px solid #521437 !important;
-    margin: 1.5rem;
-    padding: 1.5rem !important;
+.form-control {
+  border: 2px solid #56595c !important;
+  margin: 1.5rem;
+  padding: 1.5rem !important;
 }
-.formWraper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
+.formWraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
 }
-.formInput{
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.formInput {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
-.formInput div{
-    width: 35%;
-    margin: 0 1.5rem 0 0;
+.formInput div {
+  width: 35%;
+  margin: 0 1.5rem 0 0;
 }
-.formBtn{
-    background: #521437;
-    color: #dcdec3;
-    padding: .8rem 6rem;
-    outline: none;
-    border: none;
-    border-radius: .3rem;
+.formBtn {
+  background: #56595c;
+  color: #dcdec3;
+  padding: 0.8rem 6rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
 }
 /*follow icon*/
-.followIcon{
-    margin: 1rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.followIcon {
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
-.followIcon a{
-    margin: 1rem;
+.followIcon a {
+  margin: 1rem;
 }
 /*Per Contact Map*/
-.PerContactMap iframe{
-    border-radius: 1rem;
+.PerContactMap iframe {
+  border-radius: 1rem;
 }
-.PerContact div{
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
+.PerContact div {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
 }
-.Map iframe{
-    height: 100%;
+.Map iframe {
+  height: 100%;
 }
