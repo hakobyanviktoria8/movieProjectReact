@@ -2,7 +2,6 @@
   "name": "movie-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/hakobyanviktoria8/movieProjectReact/.",
   "dependencies": {
     "-": "0.0.1",
     "@material-ui/core": "^4.11.0",
@@ -11,7 +10,6 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.21.1",
     "bootstrap": "^4.5.2",
-    "gh-pages": "^3.0.0",
     "i": "^0.3.6",
     "immer": "^8.0.1",
     "movie-trailer": "^2.0.6",
@@ -28,7 +26,7 @@
     "save-dev": "0.0.1-security"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
