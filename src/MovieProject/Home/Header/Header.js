@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
+import star from "../img/Star1.svg";
 
 export function Header(props) {
   const url =
@@ -59,7 +60,7 @@ export function Header(props) {
           <h4 className={"headerDate"}>{movies.release_date}</h4>
           <div className={"HeaderVote"}>
             {stars.map((i) => (
-              <img key={i} src={require("../img/Star1.svg")} alt="" />
+              <img key={i} src={star} alt="" />
             ))}
           </div>
         </div>

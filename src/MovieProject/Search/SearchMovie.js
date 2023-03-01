@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./SearchMovie.css";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import search from "./img/search.png";
 
 export default function SearchMovies(props) {
   //input
@@ -62,7 +63,7 @@ export default function SearchMovies(props) {
           onClick={toggle}
           type="submit"
         >
-          <img src={require("./img/search.png")} alt="" />
+          <img src={search} alt="" />
         </button>
       </form>
 

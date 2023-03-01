@@ -1,6 +1,6 @@
 import React from "react";
 import "./PrintMovie.css";
-
+import popularity from "../img/popularity.svg";
 import ModalTrlerComp from "./ModalTrilerComp";
 
 export function Print({ movie }) {
@@ -41,7 +41,7 @@ export function Print({ movie }) {
               </b>
             </div>
             <div className="flip-card-back-right">
-              <img src={require("../img/popularity.svg")} alt="" />
+              <img src={popularity} alt="" />
               <small>{movie.popularity.toFixed(2)}</small>
             </div>
           </div>

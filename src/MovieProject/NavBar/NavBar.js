@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 import SearchMovies from "../Search/SearchMovie";
+import logo from "../Home/img/Logo.svg";
 
 export function NavBar(props) {
   const [show, setShow] = useState(false);
@@ -18,7 +19,7 @@ export function NavBar(props) {
   return (
     <div className={`NavBar ${show && "NavBarBG"}`}>
       <Link to="/">
-        <img className={"Logo"} src={require("../Home/img/Logo.svg")} alt="" />
+        <img className={"Logo"} src={logo} alt="" />
       </Link>
       <SearchMovies />
       <Link className={"link linkContact"} to="/contact">
